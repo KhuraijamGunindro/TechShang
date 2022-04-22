@@ -1,0 +1,1 @@
+This is an open source website developed my CS students of Manipur. Students from Manipur who has knowledge of frontend development and backend development are welcome to contribute the project. Help us in building a TechBlog website which is fast, responsive and modern.
