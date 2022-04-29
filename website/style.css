@@ -148,6 +148,9 @@ body{
     100% { background-position: 0 0; }
 }
 /*Main section styling*/
+.main{
+    background-image: url();
+}
 #main__container{
     display: grid;
     grid-template-columns: 1fr 1fr;
