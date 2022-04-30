@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src ="app.js"></script>
+    <link rel="stylesheet" href="articlestyle.css">
+    <title>TechShang | Blogs</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo"><img src="images/logo.png" width="50px">TechShang</a>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links">
+                     Home
+                    </a>
+                </li>
+                <li class="navbar__item">
+                 <a href="contact.html" class="navbar__links">
+                     Contact 
+                 </a>
+                 </li>
+                 <li class="navbar__item">
+                     <a href="index.html" class="navbar__links">
+                     About Us
+                     </a>
+                 </li>
+                 <li class="navbar__item">
+                     <a href="blogs.html" class="navbar__links" style="padding-right: 20px;">
+                     Blogs
+                     </a>
+                 </li>
+                 <form action="">
+                 <input type="text" class = "searchbar" placeholder="  Search">
+                 <button class="glow-on-hover" type="submit">Search</button>
+                 </form>
+            </ul>
+        </div>
+    </nav>
+    <div class="article-container">
+       <div class="text-center my-5">
+           <h1 id="blogtitle">Featured Articles</h1>
+       </div>
+       <div class="cards">
+       <article class="card-card1">
+           <div class="card-container">
+            <video width="369.667" height="270.667" controls style="background-color: rgb(100, 100, 100);">
+                <source src="videos/Valorant.mp4" type="video/mp4">
+                <source src="videos/Valorant.mp4" type="video/ogg">
+              Your browser does not support the video tag.
+              </video>
+           </div>
+           <div class="details">
+               <h4>Why Valorant is taking over Esports?</h4>
+               <p>Even before its official launch people were crazy about the game. Every famous Twitch streamer was playing Valorant. The idea of having to use abilities on a game like CS: GO changed our perspective on fps games.</p>
+               <button class= "articlebtn" type="button">Learn More</button>
+           </div>
+        </article>
+       <article class="card-card2">
+        <div class="card-container2">
+            <img src="images/image1blog.jpg">
+        </div>
+        <div class="details">
+            <h4>AI and Machine Learning job opportunities</h4>
+            <p>A great introduction to machine learning and AI, Machine Learnings features helpful articles on how this technology may affect your work and life.</p>
+            <button class= "articlebtn" type="button" style="margin-top: 60px;">Learn More</button>
+        </div>
+    </article>
+    <article class="card-card3">
+        <div class="card-container3">
+            <img src="images/image2blog.jpg">
+        </div>
+        <div class="details">
+            <h4>Google to increase one of its security features</h4>
+            <p>Google is expanding its warning banners for potentially malicious Google Drive files. While previously it displayed the banners when users were attempting to open such a file within a Google Drive account.</p>
+            <button class= "articlebtn" type="button">Learn More</button>
+        </div>
+    </article>
+    </div><!--End of cards container-->
+    </div>
+<!--Footer of the HTML-->
+<footer class="footer">
+    <div class="footer-class">Copyright &copy 2022 KhuraijamGunindro. All Rights Reserved</div>
+</footer>
+</body>
+</html>

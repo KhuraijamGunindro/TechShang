@@ -4,6 +4,7 @@
     padding: 0;
     font-family:'Kumbh Sans',sans-serif ;
     scroll-behavior: smooth;
+    
 }
 body{
     height: auto;
@@ -75,7 +76,71 @@ body{
     transition: all 0.3s ease;
 }
 
-#searchbar
+@media screen and (max-width:960px){
+    .navbar__container{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+    .navbar__menu{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        /* top: -1000px;
+        opacity: 1; */
+        transition: all 0.5s ease;
+        height: 50vh;
+        z-index: -1;
+        background: #131313;
+    }
+    .navbar__menu.active{
+        background: #131313;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index:99;
+        height: 58vh;
+        font-size: 1.6rem;
+    }
+    #navbar__logo{
+        padding-left: 25px;
+    }
+    .navbar__toggle.bar{
+        width:25px;
+        height:3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #fff;
+    }
+    .navbar__item{
+        width: 1005;
+    }
+    .navbar__links{
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+    #mobile-menu
+    {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%,20%);
+    }
+    .searchbar
+    {
+        width: 80%;
+    }
+}
+
+.searchbar
 {
     height: 25px;
     border-radius: 2px;
@@ -83,6 +148,7 @@ body{
     background-color: rgba(255, 255, 255, 0.452);
     cursor: text;
     margin-right: 10px;
+    width: 200px;
 }
 
 /*Glow on hover button css*/
@@ -148,6 +214,13 @@ body{
     100% { background-position: 0 0; }
 }
 /*Main section styling*/
+.main{
+    background-image: url("images/mainbr.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+}
 #main__container{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -165,7 +238,7 @@ body{
 .main__content h1{
     font-size: 4rem;
     font-family: Tahoma, Verdana, sans-serif;
-    background: linear-gradient(90deg,#3b016b,#bb02af);
+    background: linear-gradient(90deg,#ffffff,#85015d);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -187,16 +260,109 @@ body{
 #para
 {
     padding-top: 10px;
+    color: #ff89ca;
 }
 #contents
 {
     font-weight: 300;
-}
-.section{
-    height: 565px;
-    text-align: center;
-}
-#About{
-    padding-top: 40px;
+    color: white;
 }
 
+/*About us section*/
+
+
+.about-section{
+    height: 670px;
+    text-align: center;
+    background-color: rgb(177, 177, 177);
+    background-size: cover;
+}
+.about-container
+{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding: 15px 20px 0px 20px;
+    
+}
+.about-image
+{   
+    margin-left: 50px;
+    background-image: url("images/Aboutbg.jpg");
+    background-size: cover;
+    width: 50%;
+    height: 100vh;
+    box-shadow: 10px 10px rgba(75, 74, 74, 0.15);
+}
+
+/*About Us animation*/
+.about-us
+{   
+    margin-left: -100px;
+    background-color: #ffffff;
+    width: 50%;
+    height: 70vh;
+    position: relative;
+    box-shadow:10px 10px;
+    
+}
+.about-us h1 {
+    color: #fff;
+    font-size: 50px;
+    position: absolute;
+  }
+  
+  .about-us h1:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 1px #830088;
+  }
+  
+  .about-us h1:nth-child(2) {
+    color: #9e01a3;
+    animation: animate 4s ease-in-out infinite;
+  }
+  
+  @keyframes animate {
+    0%,
+    100% {
+      clip-path: polygon(
+        0% 45%,
+        16% 44%,
+        33% 50%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%
+      );
+    }
+  
+    50% {
+      clip-path: polygon(
+        0% 60%,
+        15% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%
+      );
+    }
+    
+  }
+  /* footer styling */
+  
+.footer-class
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/footerbg.jpg");
+    background-size: cover;
+    height: 150px;
+    font-size: 20px;
+    color: white;
+}
