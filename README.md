@@ -5,7 +5,9 @@
 <div> 
   This website is still in it's initial phase. Only the basic UI design has been completed. It requires an architechture, responsive and the backend part.<br><br>
 </div>
-
+  tools used : HTML5 and PURE CSS.
+  <br>
+  <br>
 <div>
   <p>Here is the Current state of the website:</p>   
 </div>
